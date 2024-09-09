@@ -5,6 +5,18 @@ namespace winform
 {
     public partial class Form1 : Form
     {
+        private void ClearFields()
+        {
+            // For TextBox controls
+            patientid.Text = "";
+            name.Text = "";
+            birthdate.Text = "";
+            mob.Text = "";
+            birthplace.Text = "";
+            sex.Text = "";
+
+            
+        }
         string connectionString = "Server=DESKTOP-EFA1UON;Database=patients;Trusted_Connection=True;TrustServerCertificate=True";
         public Form1()
         {
@@ -89,7 +101,8 @@ namespace winform
                             connection.Open();
                             command.ExecuteNonQuery();
                             MessageBox.Show("Record added successfully!");
-                            LoadData(); 
+                            LoadData();
+                            ClearFields();
                         }
                         catch (Exception ex)
                         {
@@ -138,6 +151,7 @@ namespace winform
                         {
                             MessageBox.Show("Record updated successfully!");
                             LoadData(); // Refresh the DataGridView to show the updated record
+                            ClearFields();
                         }
                         else
                         {
@@ -191,7 +205,8 @@ namespace winform
                             if (rowsAffected > 0)
                             {
                                 MessageBox.Show("Record deleted successfully!");
-                                LoadData(); 
+                                LoadData();
+                                ClearFields();
                             }
                             else
                             {
