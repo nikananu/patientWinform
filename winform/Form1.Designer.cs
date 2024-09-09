@@ -96,7 +96,7 @@
             patientid.Name = "patientid";
             patientid.Size = new Size(100, 23);
             patientid.TabIndex = 5;
-            patientid.TextChanged += textBox1_TextChanged;
+            
             // 
             // name
             // 
@@ -111,7 +111,7 @@
             birthdate.Name = "birthdate";
             birthdate.Size = new Size(100, 23);
             birthdate.TabIndex = 5;
-            birthdate.TextChanged += birthdate_TextChanged;
+            
             // 
             // sex
             // 
@@ -128,7 +128,7 @@
             label1.Size = new Size(57, 15);
             label1.TabIndex = 6;
             label1.Text = "patient id";
-            label1.Click += label1_Click;
+            
             // 
             // label2
             // 
@@ -165,7 +165,7 @@
             label5.Size = new Size(89, 15);
             label5.TabIndex = 7;
             label5.Text = "mobile number";
-            label5.Click += label5_Click;
+            
             // 
             // label6
             // 
@@ -175,7 +175,7 @@
             label6.Size = new Size(47, 15);
             label6.TabIndex = 7;
             label6.Text = "address";
-            label6.Click += label6_Click;
+          
             // 
             // mob
             // 
@@ -190,7 +190,7 @@
             birthplace.Name = "birthplace";
             birthplace.Size = new Size(100, 23);
             birthplace.TabIndex = 5;
-            birthplace.TextChanged += birthplace_TextChanged;
+            
             // 
             // Form1
             // 
